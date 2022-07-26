@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* write your CSS here */
+
+
+.italic {
+    font-style: italic;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 50%;
+    padding: 1rem 5rem;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.quote-block .footer {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote {
+    font-size: 2rem;
+}
+
+.author {
+    font-size: 1.5rem;
+}
+
+.tweet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: black;
+    border: solid 1px black;
+    border-radius: .3rem;
+}
+
+.tweet svg {
+    color: white;
+}
+
+.new-btn {
+    height: 2.5rem;
+    width: 6rem;
+    color: white;
+    background-color: black;
+    border: solid 1px rgba(0, 0, 0, 0.466);
+    border-radius: .3rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .quote-block {
+        width: 80%;
+        padding: 1rem;
+    }
+    .quote-block span svg {
+        height: 40%;
+        width: 40%;
+    }
+    .quote {
+        font-size: 1.5rem;
+    }
+    
+    .author {
+        font-size: 1.15rem;
+    }
+  }
